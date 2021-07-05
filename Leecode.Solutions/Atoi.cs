@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Leecode.Solutions
 {
@@ -53,7 +50,7 @@ namespace Leecode.Solutions
                 this.Ans = this.Ans * 10 + c - '0';
                 this.Ans = this.Sign == 1 ? Math.Min(this.Ans, (long)int.MaxValue) : Math.Min(this.Ans, -(long)int.MinValue);
             }
-            else if (this._state.Equals("signed",StringComparison.Ordinal))
+            else if (this._state.Equals("signed", StringComparison.Ordinal))
             {
                 this.Sign = c == '+' ? 1 : -1;
             }
